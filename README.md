@@ -1,6 +1,6 @@
 # [www.microfrontend.org](https://www.microfrontend.org/)
 
-+ [github](https://github.com/microfrontend-org/www)
+
 
 
 
@@ -116,13 +116,32 @@ Gdy korzystamy z własnej implementacji frontend <-> mikroserwisy możemy napotk
 + problemy z routingiem,
 + brak lazy loading.
 
+
+## The Stack
+
+How your stack looks will depend on how you want to render your application. Here is a comprehensive discussion about that, but in a nutshell:
+
+    Client-side rendering(CSR); SPA; JSON APIs —
+    This is perhaps the most popular approach. It's great for building interactive web applications. But be aware of its downsides and steps to mitigate them. This is the approach I took, so we will talk about it in a lot of detail.
+
+    Hybrid CSR; Both client-side and server-side rendering(SSR) —
+    With this approach, you still build your SPA. But when a user requests your app, for example, the homepage, you render the homepage's component into its static HTML in your server and serve it to the user. Then at the user's browser, hydration will happen so the whole thing becomes the intended SPA.
+
+The main benefits of this approach are that you get good SEO and users can see your stuff sooner (faster 'First Meaningful Paint').
+
+But there are downsides too. Apart from the extra maintenance costs, we will have to download the same payload twice—First, the HTML, and second, its Javascript counterpart for the 'hydration' which will exert significant work on the browser's main thread. This prolongs the 'First time to interactive', and hence diminishes the benefits gained from a faster 'First meaningful paint'.
+
+The technologies that are adopted for this approach are NextJs, NuxtJs, and GatsbyJs.
+
+    
 ### iframe
+    
 Wykorzystanie iframe, pozwala na łatwe wdrożeni, niestety ostylowanie jest trudne i niewygodne a dostępność dla ludzi korzystających z czytników ekranowych jest jeszcze gorzej. 
 
 Najprostszy sposób, aby zacząć: możemy użyć okna postMessage() do komunikacji między aplikacjami.
 
    
-###  Single SPA
+### Single SPA
 
 
 Jest to framework do komponowania ze sobą aplikacji frontendowych. Jeśli chcesz rozpocząć prawdziwy projekt, wybierz ten poniżej:
@@ -156,10 +175,44 @@ Framework ten wykorzystuje inne podejście, tworząc stronę routingu na backend
 
 https://github.com/zalando/tailor
     
+
+## Current Technologies at 2021
+
++ Single Page Application (SPA)
++ Progressive Web App (PWA)
++ Application as a Stream (AaaS)
+    + javascript
+    + native
+    + json based communication
+
+
+
+
+### Turbolinks
+    
+https://github.com/turbolinks/turbolinks
+Turbolinks® makes navigating your web application faster. Get the performance benefits of a single-page application without the added complexity of a client-side JavaScript framework. Use HTML to render your views on the server side and link to pages as usual. When you follow a link, Turbolinks automatically fetches the page, swaps in its <body>, and merges its <head>, all without incurring the cost of a full page load.
+
+
+
+
+### Phoenix LiveView
+
+https://github.com/phoenixframework/phoenix_live_view
+
+Phoenix LiveView enables rich, real-time user experiences with server-rendered HTML.
+
+After you [install Elixir](https://elixir-lang.org/install.html)
+in your machine, you can create your first LiveView app in two
+steps:
+
+    $ mix archive.install hex phx_new
+    $ mix phx.new demo --live
     
   
 ---
 + [edit](https://github.com/microfrontend-org/www/edit/main/README.md)
++ [git](https://github.com/microfrontend-org/www)
 ```
 https://github.com/microfrontend-org/www.git
 ```
