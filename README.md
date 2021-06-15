@@ -135,7 +135,7 @@ But there are downsides too. Apart from the extra maintenance costs, we will hav
 
 The technologies that are adopted for this approach are NextJs, NuxtJs, and GatsbyJs.
 
-    
+
 ### iframe
     
 Wykorzystanie iframe, pozwala na łatwe wdrożeni, niestety ostylowanie jest trudne i niewygodne a dostępność dla ludzi korzystających z czytników ekranowych jest jeszcze gorzej. 
