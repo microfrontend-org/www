@@ -14,6 +14,9 @@
     + json based communication
     
 
+
+
+
 ## The Stack
 
 How your stack looks will depend on how you want to render your application. Here is a comprehensive discussion about that, but in a nutshell:
@@ -211,7 +214,10 @@ steps:
     $ mix archive.install hex phx_new
     $ mix phx.new demo --live
     
-  
+
+## More
++ [How to create a better front-end developer experience](https://developers.redhat.com/articles/2021/06/01/how-create-better-front-end-developer-experience)    
+    
 ---
 + [edit](https://github.com/microfrontend-org/www/edit/main/README.md)
 + [git](https://github.com/microfrontend-org/www)
