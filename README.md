@@ -14,7 +14,7 @@
     + json based communication
     
 
-
++ [nanofrontends](http://www.nanofrontends.com/)
 
 
 ## The Stack
