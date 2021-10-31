@@ -75,21 +75,16 @@ steps:
 * Testing tools that allow you to write a confident test suite without the complexity of running a whole browser alongside your tests
 
 
-## AaaS - Application as a Stream
+# AaaS - Application as a Stream
 
 AaaS is supported by WebStream.
 
-+ WebStream is an ecosystem for web-development
++ WebStream is an library part of wapka's ecosystem for web-development
 
 ## How WebStream work's?
 
 Load any media on website without reload page, now stream each website without reload.
 Over modularity each website can talk to another without barrier...
-
-### Unikatowe ID
-
-Id elementów DOM muszą być unikatowe dla aplikacji i jej elementów gdy są wyświetlane razem.
-Rozwiązaliśmy ten problem poprzez dodanie nazwy aplikacji przed każdym id np. web-chat-header, web-admin-header, ...
 
     
 ### Supported media
@@ -107,21 +102,12 @@ Rozwiązaliśmy ten problem poprzez dodanie nazwy aplikacji przed każdym id np.
 
 
 # why?
+    
 Because we can improve our stack without clouds
 
-[more about limitations of CLOUDS](CLOUDS.md)
++ [more about limitations of CLOUDS](CLOUDS.md)
 
-## story
     
-Gdy korzystamy z własnej implementacji frontend <-> mikroserwisy możemy napotkać niektóre z tych problemów:
-
-+ wiele wersji tej samej biblioteki ładujących się z losową kolejnością i nadpisujących się,
-+ style z jednej aplikacji nadpisywały drugą,
-+ brak prostego sposobu na dodanie kolejnej aplikacji utworzonej w innym frameworku,
-+ problemy z routingiem,
-+ brak lazy loading.
-
-
 ## The Stack
 
 How your stack looks will depend on how you want to render your application. Here is a comprehensive discussion about that, but in a nutshell:
