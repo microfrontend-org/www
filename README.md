@@ -9,9 +9,9 @@
 + Single Page Application (SPA)
 + Progressive Web App (PWA)
 + Application as a Stream (AaaS)
-    + javascript    
-    + native
+    + native javascript  
     + json based communication
+    
     
 
 + [nanofrontends](http://www.nanofrontends.com/)
@@ -139,16 +139,12 @@ But there are downsides too. Apart from the extra maintenance costs, we will hav
 The technologies that are adopted for this approach are NextJs, NuxtJs, and GatsbyJs.
 
 
-### iframe
-    
-Wykorzystanie iframe, pozwala na łatwe wdrożeni, niestety ostylowanie jest trudne i niewygodne a dostępność dla ludzi korzystających z czytników ekranowych jest jeszcze gorzej. 
-
-Najprostszy sposób, aby zacząć: możemy użyć okna postMessage() do komunikacji między aplikacjami.
-
-   
+---
 ### Single SPA
 
 
+Najprostszy sposób, aby zacząć: możemy użyć okna postMessage() do komunikacji między aplikacjami.
+   
 Jest to framework do komponowania ze sobą aplikacji frontendowych. Jeśli chcesz rozpocząć prawdziwy projekt, wybierz ten poniżej:
 
 Mikrofrontend pozwala nam łączyć kilka aplikacji napisanych nawet w różnych frameworkach
@@ -166,7 +162,7 @@ https://frint.js.org
 
     
     
-### Komponenty webowe
+### WebComponents - Komponenty webowe
 
 Nie jest to framework, ale funkcja przeglądarki i być może przyszłość Internetu. Oto artykuł na ten temat:
 
@@ -180,16 +176,6 @@ Framework ten wykorzystuje inne podejście, tworząc stronę routingu na backend
 
 https://github.com/zalando/tailor
     
-
-## Current Technologies at 2021
-
-+ Single Page Application (SPA)
-+ Progressive Web App (PWA)
-+ Application as a Stream (AaaS)
-    + javascript
-    + native
-    + json based communication
-
 
 
 
@@ -215,8 +201,12 @@ steps:
     $ mix phx.new demo --live
     
 
+    
 ## More
 + [How to create a better front-end developer experience](https://developers.redhat.com/articles/2021/06/01/how-create-better-front-end-developer-experience)    
+
+    
+    
     
 ---
 + [edit](https://github.com/microfrontend-org/www/edit/main/README.md)
